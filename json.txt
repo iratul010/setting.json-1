@@ -1,0 +1,165 @@
+{
+  editor.showErrorsInline true,
+  files.autoSave onFocusChange,
+  files.autoSaveDelay 100,
+  editor.fontSize 18,
+  editor.tabSize 2,
+  editor.guides.bracketPairs true,
+  editor.wordWrap on,
+  workbench.colorTheme Material Theme Darker,
+  workbench.iconTheme vscode-icons,
+  workbench.editor.enablePreview false,
+  emmet.triggerExpansionOnTab true,
+  emmet.showSuggestionsAsSnippets true,
+  editor.mouseWheelZoom true,
+  editor.minimap.enabled true,
+  liveServer.settings.donotShowInfoMsg true,
+  liveServer.settings.AdvanceCustomBrowserCmdLine ,
+  liveServer.settings.ChromeDebuggingAttachment false,
+  liveServer.settings.ignoreFiles [
+    .vscode,
+    .scss,
+    .sass,
+    .ts
+  ],
+
+  json.schemas [],
+  editor.multiCursorModifier ctrlCmd,
+  editor.formatOnSave true,
+  launch {
+    configurations [],
+    compounds []
+  },
+
+  window.zoomLevel 1,
+  editor.defaultFormatter esbenp.prettier-vscode,
+  editor.tokenColorCustomizations {
+    textMateRules [
+      {
+        scope [variable],
+        settings {
+          foreground #4aa4e5  Blue for variables
+        }
+      },
+      {
+        scope [variable.other],
+        settings {
+          foreground #aaad9d  Yellow
+        }
+      },
+      {
+        scope [variable.language],
+        settings {
+          foreground #cc8500  Blue for variables
+        }
+      },
+      {
+        scope [variable.other.local],
+        settings {
+          foreground #09459e  Blue for variables
+        }
+      },
+      {
+        scope [variable.parameter],
+        settings {
+          foreground #d49b62
+        }
+      },
+      {
+        scope [keyword, keyword.control, keyword.operator],
+        settings {
+          foreground #d74e5c  Red for keywords and operators
+        }
+      },
+      {
+        scope constant,
+        settings {
+          foreground #FF8C00  Orange for constants
+        }
+      },
+      {
+        scope [
+          string,
+          string.template,
+          string.regexp,
+          string.escape,
+          string.quoted.single,
+          string.quoted.double
+        ],
+        settings {
+          foreground #50A14F  Green for strings
+        }
+      },
+      {
+        scope comment,
+        settings {
+          foreground #6A737D,  Gray for comments
+          fontStyle italic
+        }
+      },
+      {
+        scope entity.name.type,
+        settings {
+          foreground #A626A4  Purple for type names
+        }
+      },
+      {
+        scope support.function,
+        settings {
+          foreground #00FF00  Light green for function names
+        }
+      },
+      {
+        scope variable.function,
+        settings {
+          foreground #33997A  Teal for function parameters
+        }
+      },
+
+      {
+        scope [
+          variable.object.property,
+          variable.object.property.js,
+          variable.object.property.jsx
+        ],
+        settings {
+          foreground #FFFF00  Yellow for object property names
+        }
+      }
+    ]
+  },
+
+  todohighlight.keywords [
+    {
+      text VIDEO,
+      color #333,
+      backgroundColor #3498db
+    },
+    {
+      text BUG,
+      color #333,
+      backgroundColor #e74c3c
+    },
+    {
+      text FIXME,
+      color #333,
+      backgroundColor #e66e22
+    },
+    {
+      text TODO,
+      color #333,
+      backgroundColor #2ecc71
+    },
+    {
+      text LEC,
+      color #333,
+      backgroundColor #f1c40f
+    }
+  ],
+  prettier.arrowParens avoid,
+
+  yourAdditionalSetting yourValue,
+  anotherSetting anotherValue,
+  editor.codeActionsOnSave {},
+  workbench.settings.applyToAllProfiles []
+}
